@@ -19,7 +19,7 @@ volumes:[
   node ('jenkins-pipeline') {
 
     def pwd = pwd()
-    def chart_dir = "${pwd}/charts/test-jhk"
+    def chart_dir = "${pwd}/charts/nodeapp"
 
     checkout scm
 
@@ -101,7 +101,7 @@ volumes:[
             memory: config.app.memory,
             hostname: config.app.hostname
           )
-          
+
           //  Run helm tests
           if (config.app.test) {
             pipeline.helmTest(

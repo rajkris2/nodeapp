@@ -14,7 +14,7 @@ Master:
       - git:3.6.4
       - pipeline-github-lib:1.0
       - ghprb:1.39.0
-      - blueocean:1.4.1
+      - blueocean:1.4.2
 
   ScriptApproval:
     - "method groovy.json.JsonSlurperClassic parseText java.lang.String"
